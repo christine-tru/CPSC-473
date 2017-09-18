@@ -22,7 +22,7 @@ function setTacoDetails() {
   detailImage.setAttribute('src', 'img/tacocat.jpg');
 
   var detailTitle = document.querySelector(DETAIL_TITLE_SELECTOR);
-  detailTitle.textContent = "TACOCAT";
+  detailTitle.textContent = 'TACOCAT';
 }
 /*******************************/
 
@@ -54,10 +54,10 @@ function setDetailsFromThumb(thumbnail) {
   if (randomNum == thumNum) { //if tacocat
     setTacoDetails(); //change details to tacocat
     var oldNum = randomNum;
-    while (oldNum == randomNum) {    //loops random number generator until
-      randomNum = getRandomInt(1, 6);//there is a new random thumbnail
+    while (oldNum == randomNum) { //loops random number generator until
+      randomNum = getRandomInt(1, 6); //there is a new random thumbnail
     }
-  } else {  //changes detail to regular thumbnail
+  } else { //changes detail to regular thumbnail
     setDetails(imageFromThumb(thumbnail), titleFromThumb(thumbnail));
   }
 
